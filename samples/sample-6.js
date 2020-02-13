@@ -3,10 +3,17 @@ class Dog {
         this.hunger = 0;
     }
     
+    eat = (food) => {
+        this.food = food;
+    }
+
     remaining = () => {
         console.log(this.food.amount)
     }
  }
 
- let fido = new Dog();
- fido.remaining();
+let food = {amount : 100};
+
+let fido = new Dog();
+fido.eat(food);
+fido.remaining();

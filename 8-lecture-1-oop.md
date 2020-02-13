@@ -230,8 +230,17 @@ myCar.drive();
 // 2. How could we represent varying hunger levels based on activity?
 // 3. How about when it eats?
 class Animal {
-
-}
+    constructor(size) {
+        this.size = size;
+        this.hunger = 0;  // start not hungry, in other words
+    };
+    sleep = () => {this.hunger += (this.size)};
+    run = () => {this.hunger += (this.size*3)};
+    eat = (calories) => {
+        this.hunger -= calories;
+        this.fatness = true
+    };
+};
 
 ```
 

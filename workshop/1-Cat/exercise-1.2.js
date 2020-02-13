@@ -8,4 +8,20 @@
 // When you are done, console.log the boots object
 // and confirm that you have everything in there.
 
-// By the way, Boots is a Simaese cat...
+// By the way, Boots is a Simaese cat... LOL never heard of a Simayeeese cat before :P
+
+class Cat {
+    constructor(name, breed) {
+        this.name = name;
+        this.breed = breed;
+        this.tiredness = 0;
+        this.loneliness = 0;
+        this.hunger = 0;
+        this.happiness = 0;
+    }
+};
+
+let boots = new Cat("Boots", "Siamese");
+
+console.log("" + boots.name + " is a " + boots.breed + " cat.");
+

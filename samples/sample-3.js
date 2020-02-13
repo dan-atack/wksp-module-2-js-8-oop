@@ -7,8 +7,9 @@ class Student {
         this.excitement = this.excitement  + 5;
     }
 
-    writeCode = () => { learn(); }
+    writeCode = () => { this.learn(); }
 }
 
 let bob = new Student();
 bob.writeCode();
+console.log(bob.excitement);
